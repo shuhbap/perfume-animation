@@ -97,3 +97,5 @@ body.menu #links{clip-path:circle(150% at 100% 0)}body.menu #menuBtn i:first-chi
 .pn p{font-size:clamp(36px,11vw,70px)}.btn{padding:18px 26px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.p1{background:url(assets/images/story-1.svg) center/cover}.p2{background:url(assets/images/story-2.svg) center/cover}
+body::after{content:"";position:fixed;inset:0;background:url(assets/textures/grain.svg);opacity:.05;pointer-events:none;z-index:4}
