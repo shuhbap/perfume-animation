@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOIRÉ — Your Presence. Your Signature.</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Manrope:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="ld"><b>NOIRÉ</b><i id="lb"></i><small>CRAFTING YOUR EXPERIENCE <span id="lp">0</span>%</small></div>
+<div id="cg"></div><canvas id="gl"></canvas>
+
+<header id="nav"><a href="#hero" class="logo">NOIRÉ</a>
+<nav id="links"><a href="#hero">HOME</a><a href="#collection">COLLECTION</a><a href="#journey">THE SCENT</a><a href="#story">STORY</a><a href="#contact">CONTACT</a></nav>
+<div class="ic"><button id="cartBtn" aria-label="Open bag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg><span id="badge">0</span></button>
+<button id="menuBtn" aria-label="Menu"><i></i><i></i></button></div></header>
+
+<main>
+<section id="hero" data-bx="0"><h1 id="brand">NOIRÉ</h1><p class="tag">YOUR PRESENCE.<br>YOUR SIGNATURE.</p>
+<a href="#aura" class="btn mag" id="cta">DISCOVER THE SCENT</a><div class="scr">SCROLL TO DISCOVER<i></i></div></section>
+
+<section id="aura" data-bx="0" data-bs=".8"><h2>WHAT DOES YOUR PRESENCE FEEL LIKE?</h2>
+<div class="auras"><button data-a="MYSTERIOUS"><span>Deep violet. Dark smoke.</span>MYSTERIOUS</button><button data-a="ROYAL"><span>Gold dust. Warm light.</span>ROYAL</button><button data-a="BOLD"><span>Crimson. Dramatic.</span>BOLD</button><button data-a="PURE"><span>Cream. Soft air.</span>PURE</button></div></section>
+
+<section id="collection" data-bx="3.2" data-bs=".9"><h2 class="sm">The Collection</h2><div id="rows"></div></section>
+
+<section id="journey" data-bx="0" data-bs=".7"><div id="track">
+<div class="pn"><p>First impression.</p><small>Top notes · bergamot, pepper, citrus</small></div>
+<div class="pn"><p>Then emotion.</p><small>Heart notes · rose, jasmine, lavender</small></div>
+<div class="pn"><p>Finally, memory.</p><small>Base notes · oud, amber, musk</small></div>
+<div class="pn"><p>A fragrance becomes unforgettable<br>when it becomes part of you.</p></div></div></section>
+
+<section id="sig" data-bx="0" data-bs="1.25"><div class="big">THE<br>SIGNATURE</div><div class="rays"></div></section>
+
+<section id="story" data-bx="-3.2" data-bs=".8"><div class="st"><h2>MORE THAN A FRAGRANCE.</h2>
+<p class="lead">NOIRÉ was created for those who believe presence is remembered long after words disappear.</p></div>
+<div class="imgs"><div class="ph p1"></div><div class="ph p2"></div></div></section>
+
+<section id="ingr" data-bx="3" data-bs=".8"><h2 class="sm">Ingredients</h2><ul id="ings"></ul><p id="idesc"></p></section>
+
+<section id="exp" data-bx="0" data-bs="1"><h2>WEAR THE<br>MOMENT.</h2><p class="lead">Leave something behind<br>before you leave the room.</p><a href="#collection" class="btn mag">SHOP THE COLLECTION</a></section>
+
+<section id="rev" data-bx="0" data-bs=".6"><div class="cards">
+<blockquote>One spray and the entire room noticed.<cite>Arjun M.</cite></blockquote>
+<blockquote>Elegant, deep and unforgettable.<cite>Kabir S.</cite></blockquote>
+<blockquote>Feels like wearing confidence.<cite>Rohan D.</cite></blockquote></div></section>
+</main>
+<footer id="contact"><b class="logo">NOIRÉ</b><p>concierge@noire.example · Demo brand, demo store.</p></footer>
+
+<div id="pv" class="ov"><button class="x" data-x="pv">CLOSE</button><div class="nt" id="n1"></div><div class="nt" id="n2"></div><div class="nt" id="n3"></div>
+<div class="pf"><h3 id="pn"></h3><button class="btn" id="padd">ADD TO BAG</button></div></div>
+
+<aside id="drawer"><div class="dh"><h3>Your Bag</h3><button class="x" data-x="drawer">CLOSE</button></div><div id="items"></div>
+<div class="df"><div class="sub"><span>Subtotal</span><b id="sub">₹0</b></div><button class="btn" id="chk">CHECKOUT</button></div></aside>
+
+<div id="co" class="ov"><button class="x" data-x="co">CLOSE</button>
+<form id="form"><h3>Checkout</h3>
+<input required placeholder="Full name" autocomplete="name"><input required type="email" placeholder="Email" autocomplete="email"><input required type="tel" pattern="[0-9+ ]{10,14}" placeholder="Phone" autocomplete="tel"><input required placeholder="Address" autocomplete="street-address">
+<div class="two"><input required placeholder="City"><input required placeholder="State"></div><input required pattern="[0-9]{6}" placeholder="PIN code" inputmode="numeric">
+<div class="pay"><label><input type="radio" name="p" checked>Card</label><label><input type="radio" name="p">UPI</label><label><input type="radio" name="p">Cash on delivery</label></div>
+<div id="sum"></div><button class="btn" type="submit">PLACE DEMO ORDER</button><small>Demo checkout. No payment is processed.</small></form></div>
+
+<div id="ok" class="ov"><div class="ring"></div><h2>YOUR SIGNATURE<br>IS ON ITS WAY.</h2><p>Order confirmed.</p><small>Demo order, no payment was taken.</small><button class="btn mag" id="again">CONTINUE SHOPPING</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script></body></html>
